@@ -4,6 +4,9 @@ NI: Quiz #3
 
 /* -----------------------------------------------------------------------
  1. What is the output of the following?
+
+3 false
+3 true
 */
 
 #include <iostream> // boolalpha, cout, endl
