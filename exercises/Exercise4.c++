@@ -12,6 +12,14 @@ follows:
 #include <cassert>  // assert
 #include <iostream> // cout, endl
 
+int& pre_incr (int& r) {
+    return r += 1;}
+
+int post_incr (int& r) {
+    int v = r;
+    r += 1;
+    return v;}
+
 int main () {
     using namespace std;
     cout << "Exercise4.c++" << endl;
