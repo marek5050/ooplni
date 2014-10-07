@@ -5,6 +5,10 @@ NI: Quiz #4
 /* -----------------------------------------------------------------------
  1. Taken independently, which of the following lines does compile and
     which of the following lines does not compile?
+
+compiles
+doesn't compile
+compiles
 */
 
 int main () {
@@ -12,7 +16,7 @@ int main () {
     const int ci = 2;
 
     const int*  p  = &i;
-    int*  const pc = &ci;
+//  int*  const pc = &ci;
     const int&  r  = i;
 
     return 0;}
