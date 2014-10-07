@@ -20,9 +20,9 @@ int main (int argc, char* argv[]) {
 
     assert(argc == 5);
 
-    const string a[] = {"Nothing", "to", "be", "done."};
+    const string a[] = {"CommandLine", "Nothing", "to", "be", "done."};
 //  assert(argv == a);
-    assert(equal(argv + 1, argv + argc, a));
+    assert(equal(argv, argv + argc, a));
 
     cout << "Done." << endl;
     return 0;}
