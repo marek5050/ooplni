@@ -50,9 +50,9 @@ int main () {
     typedef allocator_type::pointer         pointer;
 
     {
-    allocator_type a;
-    value_type     v = 2;
-    const pointer p = a.allocate(1);
+          allocator_type a;
+    const value_type     v = 2;
+    const pointer        p = a.allocate(1);
     a.construct(p, v);
     assert(*p == v);
     a.destroy(p);
@@ -60,8 +60,8 @@ int main () {
     }
 
     {
-    allocator_type a;
-    value_type     v = 2;
+          allocator_type  a;
+    const value_type      v = 2;
     const difference_type s = 10;
           pointer         b = a.allocate(s);
           pointer         e = b + s;
@@ -75,9 +75,9 @@ int main () {
     typedef typename allocator_type::template rebind<double>::other allocator_type_2;
     typedef typename allocator_type_2::pointer                      pointer_2;
     typedef typename allocator_type_2::value_type                   value_type_2;
-    allocator_type_2 a;
-    value_type_2     w = 2.34;
-    const pointer_2 p = a.allocate(1);
+          allocator_type_2 a;
+    const value_type_2     w = 2.34;
+    const pointer_2        p = a.allocate(1);
     a.construct(p, w);
     assert(*p == w);
     a.destroy(p);
@@ -85,8 +85,8 @@ int main () {
     }
 
     {
-    allocator_type x;
-    allocator_type y;
+    const allocator_type x;
+    const allocator_type y;
     assert(x == y);
     assert(!(x != y));
     }
