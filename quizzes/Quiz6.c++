@@ -5,6 +5,11 @@ NI: Quiz #6
 /* -----------------------------------------------------------------------
  1. What is the output of the following?
     (6 pts)
+
+A() B() A(A) A(A) A(A) ~B() ~A()
+~A() ~A() ~A()
+
+A() B()
 */
 
 #include <iostream> // cout, endl
