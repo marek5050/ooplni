@@ -12,14 +12,13 @@ Define the class my_vector such that it behaves as follows:
 #include <memory>    // allocator
 
 template <typename A, typename BI>
-BI my_destroy (A& a, BI b, BI e) {
+void my_destroy (A& a, BI b, BI e) {
     while (b != e) {
         --e;
-        a.destroy(&*e);}
-    return b;}
+        a.destroy(&*e);}}
 
 template <typename A, typename BI, typename U>
-BI my_uninitialized_fill (A& a, BI b, BI e, const U& v) {
+void my_uninitialized_fill (A& a, BI b, BI e, const U& v) {
     BI p = b;
     try {
         while (b != e) {
@@ -27,8 +26,7 @@ BI my_uninitialized_fill (A& a, BI b, BI e, const U& v) {
             ++b;}}
     catch (...) {
         my_destroy(a, p, b);
-        throw;}
-    return e;}
+        throw;}}
 
 template <typename T, typename A = std::allocator<T> >
 class my_vector {

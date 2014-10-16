@@ -8,11 +8,10 @@
 #include <memory>    // allocator, ==, !=
 
 template <typename A, typename BI>
-BI my_destroy (A& a, BI b, BI e) {
+void my_destroy (A& a, BI b, BI e) {
     while (b != e) {
         --e;
-        a.destroy(&*e);}
-    return b;}
+        a.destroy(&*e);}}
 
 template <typename A, typename II, typename BI>
 BI my_uninitialized_copy (A& a, II b, II e, BI x) {
@@ -28,7 +27,7 @@ BI my_uninitialized_copy (A& a, II b, II e, BI x) {
     return x;}
 
 template <typename A, typename BI, typename U>
-BI my_uninitialized_fill (A& a, BI b, BI e, const U& v) {
+void my_uninitialized_fill (A& a, BI b, BI e, const U& v) {
     BI p = b;
     try {
         while (b != e) {
@@ -36,8 +35,7 @@ BI my_uninitialized_fill (A& a, BI b, BI e, const U& v) {
             ++b;}}
     catch (...) {
         my_destroy(a, p, b);
-        throw;}
-    return e;}
+        throw;}}
 
 int main () {
     using namespace std;
