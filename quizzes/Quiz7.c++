@@ -5,10 +5,10 @@ NI: Quiz #7
 /* -----------------------------------------------------------------------
  1. What is the output of the following?
 
-A() B() A(A) A(A) A(A) ~B() ~A()
+A() A(A) ~A() A() A(A) ~A() A() A(A) ~A()
 ~A() ~A() ~A()
 
-A() B()
+A() A() A()
 */
 
 #include <iostream> // cout, endl
@@ -20,11 +20,6 @@ struct A {
     A  ()         {cout << "A() ";}    // default constructor
     A  (const A&) {cout << "A(A) ";}   // copy constructor
     ~A ()         {cout << "~A() ";}}; // destructor
-
-struct B : A {
-    B  ()         {cout << "B() ";}    // default constructor
-    B  (const B&) {cout << "B(B) ";}   // copy constructor
-    ~B ()         {cout << "~B() ";}}; // destructor
 
 int main () {
     {

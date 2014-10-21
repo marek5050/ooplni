@@ -48,12 +48,13 @@ class my_vector {
 
 int main () {
     using namespace std;
-    cout << "Vector.c++" << endl;
+    cout << "Exercise7.c++" << endl;
 
     {
     my_vector<int> x;
     my_vector<int> y(10);
     my_vector<int> z(10, 2);
+    my_vector<int> t(10, 2, allocator<int>());
     }
 
     cout << "Done." << endl;
