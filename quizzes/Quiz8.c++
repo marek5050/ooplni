@@ -4,6 +4,9 @@ NI: Quiz #8
 
 /* -----------------------------------------------------------------------
  1. What is the output of the following?
+
+A(int) A(A) A(A) A(A) A(A) A(A) A(A) A(A) A(A) A(A) ~A() ~A() ~A() ~A()
+~A() ~A() ~A() ~A() ~A() ~A()
 */
 
 #include <iostream> // cout, endl
