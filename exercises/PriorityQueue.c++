@@ -1,10 +1,6 @@
-/*
-NI: Exercise #9
-*/
-
-/* -----------------------------------------------------------------------
-Define the class my_queue such that it behaves as follows:
-*/
+// -----------------
+// PriorityQueue.c++
+// -----------------
 
 // http://www.cplusplus.com/reference/queue/priority_queue/
 
@@ -139,7 +135,7 @@ void priority_queues (
 
 int main () {
     using namespace std;
-    cout << "Exercise10.c++" << endl;
+    cout << "PriorityQueue.c++" << endl;
 
     priority_queues<    priority_queue<string>                                    >("abc", "def", "ghi");
     priority_queues<    priority_queue<string, std::deque<string> >               >("abc", "def", "ghi");

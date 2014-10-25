@@ -1,10 +1,6 @@
-/*
-NI: Exercise #6
-*/
-
-/* -----------------------------------------------------------------------
-Define the class my_vector such that it behaves as follows:
-*/
+// ----------
+// Vector.c++
+// ----------
 
 #include <cassert>   // assert
 #include <algorithm> // fill
@@ -38,6 +34,9 @@ class my_vector {
             return (*const_cast<my_vector<T>*>(this))[i];}};
 
 int main () {
+    using namespace std;
+    cout << "Stack.c++" << endl;
+
     {
     my_vector<int> x;
     }
@@ -60,4 +59,6 @@ int main () {
     const my_vector<int> x(10, 2);
     assert(x[3] == 2);
     }
+
+    cout << "Done." << endl;
     return 0;}

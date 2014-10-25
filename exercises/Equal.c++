@@ -1,10 +1,6 @@
-/*
-NI: Exercise #1
-*/
-
-/* -----------------------------------------------------------------------
-Define the function my_equal() such that it behaves as follows:
-*/
+// ---------
+// Equal.c++
+// ---------
 
 // http://www.cplusplus.com/reference/algorithm/equal/
 
@@ -25,7 +21,7 @@ bool my_equal (II1 b, II1 e, II2 c) {
 
 int main () {
     using namespace std;
-    cout << "Exercise1.c++" << endl;
+    cout << "Equal.c++" << endl;
 
     const list<int>      x = {2, 3, 4};
     const vector<double> y = {2, 3, 4, 5};

@@ -1,10 +1,6 @@
-/*
-NI: Exercise #5
-*/
-
-/* -----------------------------------------------------------------------
-Define the class range_iterator such that it behaves as follows:
-*/
+// -----------------
+// RangeIterator.c++
+// -----------------
 
 #include <algorithm> // copy
 #include <cassert>   // assert
@@ -39,7 +35,7 @@ class range_iterator {
 
 int main () {
     using namespace std;
-    cout << "Exercise3.c++" << endl;
+    cout << "RangeIterator.c++" << endl;
 
     {
     range_iterator<int> b = 2;

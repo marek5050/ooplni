@@ -1,11 +1,6 @@
-/*
-NI: Exercise #4
-*/
-
-/* -----------------------------------------------------------------------
-Define the functions pre_incr() and post_incr() such that they behave as
-follows:
-*/
+// --------
+// Incr.c++
+// --------
 
 // http://www.cplusplus.com/reference/algorithm/fill/
 
@@ -22,7 +17,7 @@ int post_incr (int& r) {
 
 int main () {
     using namespace std;
-    cout << "Exercise4.c++" << endl;
+    cout << "Incr.c++" << endl;
 
     {
     int i = 2;

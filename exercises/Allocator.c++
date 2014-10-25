@@ -1,10 +1,6 @@
-/*
-NI: Exercise #7
-*/
-
-/* -----------------------------------------------------------------------
-Define the class my_vector such that it behaves as follows:
-*/
+// -------------
+// Allocator.c++
+// -------------
 
 #include <algorithm> // fill
 #include <cstddef>   // size_t
@@ -48,7 +44,7 @@ class my_vector {
 
 int main () {
     using namespace std;
-    cout << "Exercise7.c++" << endl;
+    cout << "Allocator.c++" << endl;
 
     {
     my_vector<int> x;

@@ -1,10 +1,6 @@
-/*
-NI: Exercise #9
-*/
-
-/* -----------------------------------------------------------------------
-Define the class my_queue such that it behaves as follows:
-*/
+// ---------
+// Queue.c++
+// ---------
 
 // http://www.cplusplus.com/reference/queue/queue/
 
@@ -178,7 +174,7 @@ void queues (
 
 int main () {
     using namespace std;
-    cout << "Exercise9.c++" << endl;
+    cout << "Queue.c++" << endl;
 
     queues<    queue<string>                       >("abc", "def", "ghi");
     queues<    queue<string, std::list<string>   > >("abc", "def", "ghi");

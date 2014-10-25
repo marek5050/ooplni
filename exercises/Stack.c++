@@ -1,10 +1,6 @@
-/*
-NI: Exercise #8
-*/
-
-/* -----------------------------------------------------------------------
-Define the class my_stack such that it behaves as follows:
-*/
+// ---------
+// Stack.c++
+// ---------
 
 // http://www.cplusplus.com/reference/stack/stack/
 
@@ -163,7 +159,7 @@ void stacks (
 
 int main () {
     using namespace std;
-    cout << "Exercise8.c++" << endl;
+    cout << "Stack.c++" << endl;
 
     stacks<    stack<string>                       >("abc", "def", "ghi");
     stacks<    stack<string, std::list<string>   > >("abc", "def", "ghi");

@@ -1,12 +1,6 @@
-/*
-NI: Exercise #3
-*/
-
-/* -----------------------------------------------------------------------
-Define the function my_fill() such that it behaves as follows:
-*/
-
-// http://www.cplusplus.com/reference/algorithm/fill/
+// --------
+// Fill.c++
+// --------
 
 #include <algorithm> // all_of, fill
 #include <cassert>   // assert
@@ -21,7 +15,7 @@ void my_fill (FI b, FI e, const T& v) {
 
 int main () {
     using namespace std;
-    cout << "Exercise3.c++" << endl;
+    cout << "Fill.c++" << endl;
 
     const size_t s = 3;
     const int    v = 5;

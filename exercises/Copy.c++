@@ -1,10 +1,6 @@
-/*
-NI: Exercise #2
-*/
-
-/* -----------------------------------------------------------------------
-Define the function my_copy() such that it behaves as follows:
-*/
+// --------
+// Copy.c++
+// --------
 
 // http://www.cplusplus.com/reference/algorithm/copy/
 
@@ -24,15 +20,13 @@ OI my_copy (II b, II e, OI x) {
 
 int main () {
     using namespace std;
-    cout << "Exercise2.c++" << endl;
+    cout << "Copy.c++" << endl;
 
-    {
     const list<int>       x = {2, 3, 4};
     vector<int>           y(5);
     vector<int>::iterator p = copy(x.begin(), x.end(), y.begin() + 1);
     assert(p == y.begin() + 4);
     assert(equal(x.begin(), x.end(), y.begin() + 1));
-    }
 
     cout << "Done." << endl;
     return 0;}
