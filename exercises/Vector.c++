@@ -35,7 +35,7 @@ class my_vector {
 
 int main () {
     using namespace std;
-    cout << "Stack.c++" << endl;
+    cout << "Vector.c++" << endl;
 
     {
     my_vector<int> x;

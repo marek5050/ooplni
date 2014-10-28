@@ -46,12 +46,10 @@ int main () {
     using namespace std;
     cout << "Allocator.c++" << endl;
 
-    {
     my_vector<int> x;
     my_vector<int> y(10);
     my_vector<int> z(10, 2);
     my_vector<int> t(10, 2, allocator<int>());
-    }
 
     cout << "Done." << endl;
     return 0;}
