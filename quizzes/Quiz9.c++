@@ -3,9 +3,20 @@ NI: Quiz #9
 */
 
 /* -----------------------------------------------------------------------
- 1. What is the output of the following?
-    Alternatively, the line might not compile.
-    If a line doesn't compile, which line is illegal.
+1. What is the output of the following?
+   Alternatively, the line might not compile.
+   If a line doesn't compile, which line is illegal.
+
+f(int&)
+f(const int&)
+f(const int&)
+
+g(T)
+g(T*)
+
+g(T)
+g(T*)
+g(T)
 */
 
 #include <iostream> // cout, endl
@@ -41,7 +52,7 @@ int main () {
 
     g<int>(i);
     g<int>(&i);
-    g<int*>(i);
+//  g<int*>(i);  // error: no matching function for call to ‘g(int&)’
     g<int*>(&i);
 
     return 0;}
