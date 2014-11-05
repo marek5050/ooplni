@@ -4,6 +4,12 @@ NI: Quiz #10
 
 /* -----------------------------------------------------------------------
  1. What is the output of the following program?
+
+A(int)
+A(A)
+A(int) ~A()
+int(A)
+~A() ~A()
 */
 
 #include <iostream> // cout, endl
