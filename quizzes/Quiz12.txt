@@ -1,0 +1,8 @@
+--
+NI: Quiz #12
+--
+
+--------------------------------------------------------------------------
+ 1. What are the FOUR circumstances where a virtual method will NOT be
+    dynamically bound?
+--
