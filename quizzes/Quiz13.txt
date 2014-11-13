@@ -1,0 +1,11 @@
+--
+NI: Quiz #13
+--
+
+--------------------------------------------------------------------------
+ 1. What are the consequences of making a method "abstract"?
+--
+
+--------------------------------------------------------------------------
+ 2. What are the consequences of making the destructor "abstract"?
+--
