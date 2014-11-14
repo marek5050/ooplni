@@ -6,6 +6,13 @@ NI: Quiz #13
  1. What are the consequences of making a method "abstract"?
 --
 
+base class becomes abstract
+derived classes must define the method or become abstract
+definition of the method in the base class becomes optional
+if defined it must be defined outside the body of the class
+
 --------------------------------------------------------------------------
  2. What are the consequences of making the destructor "abstract"?
 --
+
+base class becomes abstract
