@@ -1,0 +1,24 @@
+--
+NI: Quiz #14
+--
+
+--------------------------------------------------------------------------
+ 1. Handle1 did NOT override operator*() and operator->().
+    Handle2 did.
+    What are the advantages and disadvantages of the two approaches?
+--
+
+--------------------------------------------------------------------------
+ 2. Does creating an instance of an outer class automatically create an
+    instance of an inner class?
+--
+
+--------------------------------------------------------------------------
+ 3. Does creating an instance of an inner class automatically create an
+    instance of an outer class?
+--
+
+--------------------------------------------------------------------------
+ 4. Must an instance of an outer class be used to create an instance of an
+    inner class?
+--
