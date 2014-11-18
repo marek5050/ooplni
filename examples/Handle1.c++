@@ -32,7 +32,6 @@ struct Shape : Handle<AbstractShape> {
 
 int main () {
     using namespace std;
-    using namespace std::rel_ops;
     cout << "Handle1.c++" << endl;
 
     {

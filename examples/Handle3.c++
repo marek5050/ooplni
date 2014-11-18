@@ -2,10 +2,8 @@
 // Handle3.c++
 // -----------
 
-#include <cassert>   // assert
-#include <cstddef>   // size_t
-#include <iostream>  // cout, endl
-#include <stdexcept> // bad_cast
+#include <cassert>  // assert
+#include <iostream> // cout, endl
 
 #include "Handle3.h"
 #include "Shapes.h"
@@ -34,7 +32,6 @@ struct Shape : Handle<AbstractShape> {
 
 int main () {
     using namespace std;
-    using namespace std::rel_ops;
     cout << "Handle3.c++" << endl;
 
     {

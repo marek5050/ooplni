@@ -6,11 +6,13 @@
 #define Shapes_h
 
 #include <iostream> // istream, ostream
-#include <utility>  // !=
 
 class AbstractShape {
     friend bool operator == (const AbstractShape& lhs, const AbstractShape& rhs) {
         return lhs.equals(rhs);}
+
+    friend bool operator != (const AbstractShape& lhs, const AbstractShape& rhs) {
+        return !(lhs == rhs);}
 
     friend std::istream& operator >> (std::istream& lhs, AbstractShape& rhs) {
         return rhs.read(lhs);}

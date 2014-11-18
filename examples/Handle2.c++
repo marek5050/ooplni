@@ -13,7 +13,6 @@ typedef Handle<AbstractShape> Shape;
 
 int main () {
     using namespace std;
-    using namespace std::rel_ops;
     cout << "Handle2.c++" << endl;
 
     {
