@@ -37,7 +37,7 @@ class Handle {
                 assert(_q);}
 
             ~count () {
-                assert(!_c);
+                assert(_c == 1);
                 delete _q;}};
 
         count* _p;
@@ -58,12 +58,13 @@ class Handle {
 
         Handle (const Handle& rhs) {
             _p = rhs._p;
-            if (_p)
-                ++_p->_c;}
+            ++_p->_c;}
 
         ~Handle () {
-            if (--_p->_c == 0)
-                delete _p;}
+            if (unique())
+                delete _p;
+            else
+                --_p->_c;}
 
         Handle& operator = (Handle that) {
             swap(that);
